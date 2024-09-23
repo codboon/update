@@ -22,8 +22,6 @@ __pycache__/
 *.log
 *.out
 
-# Dossier des fichiers .exe
-exe_files/
 
 # Configuration de l'application
 *.env
