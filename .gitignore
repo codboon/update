@@ -1,0 +1,33 @@
+# Environnements virtuels
+env/
+venv/
+ENV/
+.venv/
+.ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Configuration d'IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+*.out
+
+# Dossier des fichiers .exe
+exe_files/
+
+# Configuration de l'application
+*.env
+
+# Fichiers de base de données
+*.sqlite3
+*.db
