@@ -33,3 +33,15 @@ def get_latest_version():
     latest_file = max(exe_files, key=version_key)
     print(f"Le fichier .exe le plus récent est : {latest_file}")
     return latest_file
+
+
+# Fonction pour tester la validité du fichier
+def download_latest_setup():
+    latest_exe = get_latest_version()
+    if not latest_exe or not os.path.exists(latest_exe):
+        print(f"Erreur: Le fichier à {latest_exe} n'existe pas")
+        raise RuntimeError(f"File at path {latest_exe} does not exist")
+    
+    # Logique de téléchargement ici, si nécessaire
+    print(f"Téléchargement du fichier : {latest_exe}")
+    return latest_exe
